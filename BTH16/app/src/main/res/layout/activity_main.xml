@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nhập A -->
+    <TextView
+        android:id="@+id/textViewA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập A:"
+        android:textSize="18sp"
+        android:textColor="#0000FF" />
+
+    <EditText
+        android:id="@+id/edta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <!-- Nhập B -->
+    <TextView
+        android:id="@+id/textViewB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập B:"
+        android:textSize="18sp"
+        android:textColor="#0000FF" />
+
+    <EditText
+        android:id="@+id/edtb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <!-- Kết quả -->
+    <TextView
+        android:id="@+id/textViewKetQua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kết quả"
+        android:textSize="18sp"
+        android:textColor="#0000FF"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/edtkq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:clickable="false" />
+
+    <!-- Nút TỔNG và CLEAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btntong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TỔNG" />
+
+        <Button
+            android:id="@+id/btnclear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CLEAR" />
+    </LinearLayout>
+
+    <!-- Lịch sử -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lịch sử"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:background="#00FFFF"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/txtlichsu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="5"
+        android:inputType="textMultiLine"
+        android:gravity="top|start"
+        android:background="#EEEEEE"
+        android:padding="8dp" />
+</LinearLayout>
